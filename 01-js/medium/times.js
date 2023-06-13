@@ -8,5 +8,13 @@ Hint - use Date class exposed in JS
 */
 
 function calculateTime(n) {
-    return 0.01;
+    let start = new Date;
+    console.log((n*(n+1))/2);
+    let end = new Date;
+    console.log((end-start)/1000);
 }
+
+
+calculateTime(100); //====> 0.004
+calculateTime(100000); //====> 0.004
+calculateTime(1000000000); //====> 0.747
